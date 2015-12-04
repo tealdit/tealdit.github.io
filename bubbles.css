@@ -1,48 +1,43 @@
-@keyframes greenPulse {
-  0% {box-shadow:0 0 30px #4bbec8}
-  50% {box-shadow:0 0 80px #4bbec8}
-  100% {box-shadow:0 0 30px #4bbec8}
+div.wibiya-alternative-ads {position: relative;}
+p.bubbles{
+  background: none;
+  font-family: Androgyne;
+  background-image: url('/images/s1.png'), url('/images/s2.png'), url('/images/s3.png');
+  height: 100%;
+  /*left: 0;
+  position: absolute;
+  top: 0;*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index:1;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
 }
-span#beaker span.glow {
-  width:100%;
-  height:100%;background:##222;
-  position:relative;
-  display:block;
-  border-radius:200px;
-  animation:greenPulse 2s infinite;
-  -webkit-animation:greenPulse 2s infinite;
-  -moz-animation:greenPulse 2s infinite;
-  -o-animation:greenPulse 2s infinite;
+p.bubbles a {overflow: hidden;margin: 0;padding: 0;position: relative;}
+p.bubbles a span{display: block}
+p.bubbles a span.first-pad,
+p.bubbles a span.third-pad{height: 25px;}
+p.bubbles a span.second-pad{background: url('/images/bubbles.png') no-repeat;background-size: 100%;display: block;min-height: 90px;}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
-@keyframes bubbleUp {
-  0% {bottom:150px;-webkit-transform:scale(.9);opacity:0}
-  1% {bottom:150px;-webkit-transform:scale(.3);opacity:0}
-  30% {bottom:150px;-webkit-transform:scale(.8);opacity:1}
-  95% {bottom:585px;-webkit-transform:scale(.3);opacity:1}
-  99% {bottom:590px;-webkit-transform:scale(3);opacity:0}
-  100% {bottom:150px;-webkit-transform:scale(.9);opacity:0}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
 }
-span#beaker span.bubble {
-  background:#fff;
-  width:80px;
-  height:80px;
-  position:absolute;
-  display:block;
-  left:110px;
-  bottom:150px;
-  border-radius:100px; 
-  background:-moz-radial-gradient(center 45deg, circle closest-corner, rgba(75,190,200,0), rgba(75,190,200,.1), rgba(75,190,200,.3), rgba(255,255,255,.7));
-  background:-webkit-gradient(radial, center center, 0, center center, 100, from(rgba(75,190,200,.2)), to(rgba(255,255,255,.7)));
-  background:gradient(center 45deg, circle closest-corner, rgba(75,190,200,0), rgba(75,190,200,.1), rgba(75,190,200,.3), rgba(255,255,255,.7));
-  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(9,133,167,0.1) 51%, rgba(9,133,167,0.3) 71%, rgba(9,133,167,.7) 100%);
-  animation:bubbleUp 4s infinite ease-in-out;
-  -webkit-animation:bubbleUp 4s infinite ease-in-out;
-  -o-animation:bubbleUp 4s infinite ease-in-out;
-  -moz-animation:bubbleUp 4s infinite ease-in-out;
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
-span.removeBubble {
-    display: block;
-    clear: both;
-    font-size: 10px;
-    font-weight: normal;
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }

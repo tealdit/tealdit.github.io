@@ -8,6 +8,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/bubbles.css" />
@@ -41,29 +42,32 @@
       {{ content }}
 
       <div class="adsense">
+        <hr/>
+        <hr/>
+
         <!-- Google adsense starts -->
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle" style="display: block !important;visibility: visible !important;" data-ad-client="ca-pub-9567128729272204" data-ad-slot="2220424816"
-             data-ad-format="auto">
-             <div class="wibiya-alternative-ads">
-              <h2>
-                I wish there was no such thing as ADblockER. <br/><a href="http://wibiya.com/go/10000BubblesAMinute" target="_blank" onmouseover="window.status='LoL with Me'; return true">click here for more bubbles.</a> or 
-                <span id="beaker"><span class="bubble"><span class="glow"> </span></span></span>
-                <span class="removeBubble">disable adblocker to remove this bubble</span>
-              </h2>
-
-              <hr/>
-
-              <h3>Web Hosting Companies To Watch Out For</h3>
-              <ul>
-                <li><a href="http://wibiya.com/go/wibiyaHostmoster">Hostmonster</a> - Host Unlimited Domains On 1 Hosting Account <img src="http://www.tqlkg.com/image-5288229-10811685-1282948464000" alt="Hostmoster Cheap Web Hosting"/></li>
-                <li><a href="http://wibiya.com/go/wibiyaBlueHost">Blue Host</a> - Cutting-Edge VPS Hosting at Reduced Prices <img alt="Premium Hosting at reduced prices" src="http://www.lduhtrp.net/image-5288229-11768802-1433372557000"/></li>
-              </ul>
-              <img src="http://j.mp/hasAdblockTracker" alt="Please support us by disabling adblocks. Thank You."/>
-            </div>
-        </ins>
+        <ins class="adsbygoogle" style="display: block !important;visibility: visible !important;" data-ad-client="ca-pub-9567128729272204" data-ad-slot="2220424816" data-ad-format="auto"></ins>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         <!-- Google adsense starts -->
+        <div class="wibiya-alternative-ads" style="display: none;">
+          <div style="background: #000;max-height: 140px;">
+            <p class="bubbles">
+              <a href="http://wibiya.com/go/10000BubblesAMinute" target="_blank" onmouseover="window.status='LoL with Me'; return true;">
+                <span class="first-pad">&nbsp;</span>
+                <span class="second-pad">&nbsp;</span>
+                <span class="third-pad">&nbsp;</span>
+              </a>
+              &nbsp;
+            </p>
+          </div>
+          <hr/>
+          <h3>Web Hosting Companies To Watch Out For</h3>
+          <ul>
+            <li><a href="http://wibiya.com/go/wibiyaHostmoster">Hostmonster</a> - Host Unlimited Domains On 1 Hosting Account <img src="http://www.tqlkg.com/image-5288229-10811685-1282948464000" alt="Hostmoster Cheap Web Hosting"/></li>
+            <li><a href="http://wibiya.com/go/wibiyaBlueHost">Blue Host</a> - Cutting-Edge VPS Hosting at Reduced Prices <img alt="Premium Hosting at reduced prices" src="http://www.lduhtrp.net/image-5288229-11768802-1433372557000"/></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -76,5 +80,13 @@
     </div>
 
     {% include analytics.html %}
+  <script type="text/javascript">
+    jQuery( document ).ready(function( $ ) {
+      // Code using $ as usual goes here.
+      if($('ins.adsbygoogle iframe').length < 1){
+        $('.wibiya-alternative-ads').show();
+      }
+    });
+  </script>
   </body>
 </html>
