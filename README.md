@@ -9,4 +9,4 @@ Add this just before `</body>`
 
 ## Promotions
 
-### Let me (Re)tweet your AD. -  ([how?](https://www.seoclerk.com/linkin/1228/Webmaster/1728/dbashyal))
+### Let me (Re)tweet your AD. -  ([how?](http://bit.ly/BestAndCheapSEO))
