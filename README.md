@@ -9,4 +9,4 @@ Add this just before `</body>`
 
 ## Promotions
 
-### Let me (Re)tweet your AD. -  ([how?](http://bit.ly/BestAndCheapSEO))
+### Have you ever seen this low ([like this?](http://goo.gl/4aiocf))
