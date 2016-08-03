@@ -10,7 +10,7 @@ Tealdit is a free website share toolbar.
 
 How to install free toolbar? [Instructions Here]({{ site.baseurl }}/install-tealdit-toolbar/)
 
-How can I raise issues? [Read Here] (https://github.com/Wibiya/cdn/issues)
+How can I raise issues? [Read Here](https://github.com/Wibiya/cdn/issues)
 
 ### Contact me
 
