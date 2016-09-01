@@ -9,4 +9,4 @@ Add this just before `</body>`
 
 ## Promotions
 
-### Have you ever seen this low ([like this?](http://goo.gl/4aiocf))
+### Can you get all these for $1 ([like this?](http://goo.gl/kRWrif))
