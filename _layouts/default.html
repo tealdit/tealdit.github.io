@@ -75,39 +75,37 @@
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
         <hr/>
-        <div class="adsense" id="chrome_paywall">
-            <script>
-                function playYoutubeVideos(video_id, div_id) {
-                    var player;
-                    player = new YT.Player(div_id, {
-                        videoId: video_id, // YouTube Video ID
-                        width: 300,             // Player width (in px)
-                        height: 169,            // Player height (in px)
-                        playerVars: {
-                            autoplay: 1,        // Auto-play the video on load
-                            controls: 1,        // Show pause/play buttons in player
-                            showinfo: 0,        // Hide the video title
-                            modestbranding: 1,  // Hide the Youtube Logo
-                            loop: 1,            // Run the video in a loop
-                            fs: 1,              // Hide the full screen button
-                            cc_load_policty: 0, // Hide closed captions
-                            iv_load_policy: 3,  // Hide the Video Annotations
-                            autohide: 0         // Hide video controls when playing
-                        },
-                        events: {
-                            onReady: function (e) {
-                                e.target.mute();
-                            }
+        <div class="adsense" id="chrome_paywall"></div>
+        <script>
+            function playYoutubeVideos(video_id, div_id) {
+                var player;
+                player = new YT.Player(div_id, {
+                    videoId: video_id, // YouTube Video ID
+                    width: 300,             // Player width (in px)
+                    height: 169,            // Player height (in px)
+                    playerVars: {
+                        autoplay: 1,        // Auto-play the video on load
+                        controls: 1,        // Show pause/play buttons in player
+                        showinfo: 0,        // Hide the video title
+                        modestbranding: 1,  // Hide the Youtube Logo
+                        loop: 1,            // Run the video in a loop
+                        fs: 1,              // Hide the full screen button
+                        cc_load_policty: 0, // Hide closed captions
+                        iv_load_policy: 3,  // Hide the Video Annotations
+                        autohide: 0         // Hide video controls when playing
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute();
                         }
-                    });
-                }
+                    }
+                });
+            }
 
-                function onYouTubeIframeAPIReady() {
-                    playYoutubeVideos('eqq2tvwIZgA', 'chrome_paywall');
-                }
-            </script>
-
-        </div>
+            function onYouTubeIframeAPIReady() {
+                playYoutubeVideos('eqq2tvwIZgA', 'chrome_paywall');
+            }
+        </script>
 
         <div class="adsense">
             <script src="https://apis.google.com/js/platform.js"></script>
